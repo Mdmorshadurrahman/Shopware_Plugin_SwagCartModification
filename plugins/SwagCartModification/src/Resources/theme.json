@@ -1,0 +1,54 @@
+{
+  "name": "SwagCartModification",
+  "author": "Shopware AG",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@SwagCartModification"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/swag-cart-modification.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets",
+      "app/storefront/src/script"
+  ],
+    "config": {
+        "blocks": {
+            "clicked color setting": {
+                "label": {
+                    "en-GB": "Clicked Color Setting",
+                    "de-DE": "Angeklickte Farbeinstellung"
+                }
+            }
+        },
+        "sections": {
+            "overriddenBackgroundColor": {
+                "label": {
+                    "en-GB": "overridden Variables",
+                    "de-DE": "Überschriebene Variablen"
+                }
+            }
+        },
+        "fields": {
+            "backgroundColor": {
+                "label": {
+                    "en-GB": "overridden Background Color",
+                    "de-DE": "Überschriebene Hintergrundfarbe"
+                },
+                "type": "color",
+                "editable": true,
+                "block": "clicked color setting",
+                "section": "overriddenBackgroundColor",
+                "value": "#464443"
+            }
+        }
+    }
+}
